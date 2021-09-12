@@ -1,0 +1,396 @@
+.register-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.register-form-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    /* padding-top: 100px; */
+    /* box-shadow: 5px 5px 5px rgba(0,0,0,0.5) */
+    flex: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.register-form-wrapper .bg {
+    background: url('../img/bg.jpg') no-repeat -130px / cover;
+    height: 100%;
+    position: relative;
+    min-height: 500px;
+}
+
+.register-form-wrapper .bg:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    bottom: 15px;
+    border: 2px solid var(--main-white-color);
+}
+
+.register-form-wrapper .bg img {
+    position: absolute;
+    width: 250px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.register-form-wrapper form {
+    background: var(--main-white-color);
+    /* padding: 50px 0; */
+}
+
+.register-form-wrapper form .register-form {
+    max-height: 500px;
+    padding: 0 15px;
+}
+
+.register-form-wrapper form .register-form h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 0 0;
+    font-weight: 300;
+}
+
+.register-form-wrapper form .register-form p {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    color: var(--main-gray-color);
+    margin-bottom: 25px;
+}
+
+.register-form-wrapper form .register-form .custom-radio {
+    border: 1px solid var(--main-gray-border);
+    display: block;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 0;
+    font-size: 0;
+    width: max-content;
+}
+
+.register-form-wrapper form .register-form .custom-radio input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+
+.register-form-wrapper form .register-form .custom-radio label {
+    color: var(--main-black-color);
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100px;
+    text-align: center;
+}
+
+.register-form-wrapper form .register-form .custom-radio input[type=radio]:checked+label {
+    color: var(--main-white-color);
+    ;
+    background: var(--main-blue-color);
+}
+
+.register-form-wrapper form .register-form .custom-radio label+input[type=radio]+label {
+    border-left: 1px solid var(--main-gray-border);
+}
+
+.register-form-wrapper form .register-form .btn {
+    padding: 5px 20px;
+}
+
+
+@media (max-width: 797px) {
+    .register-page {
+        display: block;
+    }
+
+    .register-form-wrapper .bg {
+        background-position: center;
+    }
+
+    .register-form-wrapper form .register-form {
+        max-height: none;
+    }
+}
+
+/* .register-form{
+    max-width: 600px;
+    margin: 0 auto;
+    height: 600px;
+    background: var(--main-gray-color);
+} */
+
+/*-----------------------------register page 2------------------------------------*/
+html {
+    height: 100%;
+}
+
+.register-page_2 {
+    background: url('../img/bg-2.jpg') no-repeat center / cover;
+    height: 100%;
+}
+
+.register-form-wrapper_2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.register-form-wrapper_2 .bg {
+    background: #439ed7;
+    height: 100%;
+    padding: 150px 60px;
+    padding: 100px 60px 0;
+}
+
+.register-form-wrapper_2 .bg img {
+    width: 300px;
+}
+
+.register-form-wrapper_2 .bg h1 {
+    color: var(--main-white-color);
+    font-weight: 300;
+    font-size: 40px;
+    transition: all ease 0.3s;
+}
+
+.register-form-wrapper_2 .bg p {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--main-white-color);
+}
+
+.register-form-wrapper_2 .form-wrapper {
+    /* padding: 0 50px; */
+    position: relative;
+    background: var(--main-white-color);
+}
+
+.register-form-wrapper_2 .form-wrapper > span {
+    position: absolute;
+    background: var(--main-white-color);
+}
+
+.register-form-wrapper_2 .form-wrapper > span.top {
+    top: var(--register-border-space);
+    left: 0;
+    right: 0;
+    height: var(--register-border-height);
+}
+
+.register-form-wrapper_2 .form-wrapper > span.bottom {
+    bottom: var(--register-border-space);
+    left: 0;
+    right: 0;
+    height: var(--register-border-height);
+}
+
+.register-form-wrapper_2 .form-wrapper > span.side {
+    left: -100px;
+    top: var(--register-border-space);
+    bottom: var(--register-border-space);
+    width: 100px;
+    z-index: -1;
+}
+
+.register-form-wrapper_2 .form-wrapper ul {
+    font-size: 0;
+    list-style: none;
+    padding: 0 50px;
+}
+
+.register-form-wrapper_2 .form-wrapper ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.register-form-wrapper_2 .form-wrapper > ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--main-gray-color);
+}
+
+.register-form-wrapper_2 .form-wrapper > ul li.active a {
+    color: #439ed7;
+
+}
+
+.register-form-wrapper_2 form .register-form {
+    max-height: 575px;
+    padding: 0 50px;
+}
+
+.register-form-wrapper_2 form .register-form .btn {
+    padding: 5px 25px;
+    color: var(--main-white-color);
+    font-size: 18px;
+}
+
+.custom-radio {
+    border: 1px solid var(--main-gray-border);
+    display: block;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 0;
+    font-size: 0;
+    width: max-content;
+}
+
+.custom-radio input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+
+.custom-radio label {
+    color: var(--main-black-color);
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100px;
+    text-align: center;
+}
+
+.custom-radio input[type=radio]:checked+label {
+    color: var(--main-white-color);
+    ;
+    background: #439ed7;
+}
+
+.custom-radio label+input[type=radio]+label {
+    border-left: 1px solid var(--main-gray-border);
+}
+
+@media (max-width: 767px) {
+    .register-form-wrapper_2 {
+        display: block;
+    }
+
+    .register-form-wrapper_2 .bg {
+        padding: 50px 50px 90px;
+    }
+}
+
+@media (max-width: 400px) {
+    .register-form-wrapper_2 .bg h1 {
+        font-size: 30px;
+    }
+}
+
+/*---------------------------*/
+.forgot-password-link a{
+    color: var(--main-blue-color);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+}
+.divide {
+    position: relative;
+    text-align: center;
+}
+
+.divide::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    right: 50px;
+    background: #ddd;
+    left: 50px;
+}
+
+.divide span {
+    padding: 0px 15px;
+    display: inline-block;
+    position: inherit !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--main-black-color);
+}
+
+.social-media-login {
+    padding: 0 50px;
+}
+.social-media-login h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--main-black-color);
+}
+.social-media-login ul{
+    padding: 0 !important;
+}
+.social-media-login ul li{
+    font-size: 16px;
+    width: calc(50% - 15px);
+    margin-bottom: 15px;
+    position: relative
+    /* text-align: center */
+}
+.social-media-login ul li:nth-child(even){
+    background: #000;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.social-media-login ul li i{
+    width: 40px;
+    position: absolute;
+    line-height: 50px;
+    text-align: center;
+    color: var(--main-white-color);
+}
+.social-media-login ul li a{
+    color: var(--main-white-color);
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+}
+.social-media-login ul li a span{
+    background: none !important;
+    font-size: 14px;
+    display: block;
+    text-transform: capitalize;
+    position: inherit !important;
+    text-align: center;
+    font-weight: 500;
+    line-height: 50px;
+}
+.social-media-login ul li.facebook{
+    background: #3C5D96;
+}
+.social-media-login ul li.twitter{
+    background: #64AEEB;
+}
+.social-media-login ul li.google{
+    background: #D05D46;
+}
+.social-media-login ul li.linkedin{
+    background: #297DB4;
+}
+
+/*--------------------------------------*/
+
+.forgot-pass{
+    min-height: 360px;
+}

@@ -1,0 +1,53 @@
+.program-bznsPlan-tabs-navs{
+    background: var(--main-black-color);
+}
+.program-bznsPlan-tabs-navs .nav-tabs{
+    justify-content: center;
+}
+.program-bznsPlan-tabs-navs .nav-tabs .nav-link{
+    background: transparent;
+    border: 0;
+    color: var(--main-gray-color);
+    font-size: 14px;
+    padding: 12px;
+}
+.program-bznsPlan-tabs-navs .nav-tabs .nav-link.active{
+    color: var(--main-white-color);
+}
+
+.tab-content>.tab-pane{ display: block; height: 0px; overflow: hidden; }
+.tab-content>.active{ height: auto;}
+.program-bznsplan-edit-list{
+    max-height: 500px !important;
+    min-height: 500px;
+}
+.program-bznsplan-edit-list ul{
+    padding: 0 15px;
+    list-style: none;
+    margin: 0;
+}
+.program-bznsplan-edit-list ul li{
+    padding: 10px;
+    font-size: 14px;
+    color: var(--main-black-color);
+    background: var(--main-gray-bg);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.program-bznsplan-edit-list ul li a.remove{
+    padding-left: 10px;
+    color: var(--main-red-color);
+}
+.sections-list{
+    padding: 0;
+    list-style: none;
+}
+.sections-list li{
+    padding: 5px;
+}
+
+.program-bznsPlan-tabs-content .panel-title-with-btn .btn{
+    color: var(--main-white-color);
+}

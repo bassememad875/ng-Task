@@ -1,0 +1,110 @@
+.switcher-style-1 {
+	position: relative;
+	width: 250px;
+	height: 45px;
+	border-radius: 25px;
+}
+
+.switcher-style-1 input {
+	appearance: none;
+	-webkit-appearance: none;
+	position: relative;
+	width: 250px;
+	height: 45px;
+	border-radius: 25px;
+	background-color: #182631;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.switcher-style-1 input:before,
+.switcher-style-1 input:after {
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--main-white-color);
+	font-size: 16px;
+	font-weight: 600;
+	/* text-transform: uppercase; */
+	/* width: 94px; */
+	width: 100px;
+    text-align: center;
+    height: 37px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.switcher-style-1 input:before {
+	content: attr(data-price-monthly);
+	left: 10px;
+}
+
+.switcher-style-1 input:after {
+	content: attr(data-price-yearly);
+	right: 10px;
+}
+
+.switcher-style-1 label {
+	z-index: 1;
+	position: absolute;
+	top: 3px;
+	bottom: 3px;
+	border-radius: 20px;
+	margin: 0;
+}
+
+.switcher-style-1 input {
+	transition: 0.25s -0.1s;
+}
+
+.switcher-style-1 input:checked {
+	background: var(--main-white-color);
+}
+
+.switcher-style-1 input:checked:before {
+	color: var(--main-gray-color);
+	transition: color 0.5s 0.2s;
+}
+
+.switcher-style-1 input:checked:after {
+	color: #ccc;
+	color: var(--main-white-color);
+	transition: color 0.5s;
+}
+
+.switcher-style-1 input:checked+label {
+	right:3px;
+	/* right: 125px; */
+	left: 130px;
+	/* background: var(--main-blue-color); */
+	background: var(--main-green-color);
+	transition: right 0.5s, left 0.4s 0.2s;
+}
+
+.switcher-style-1 input:not(:checked) {
+	/* background: #182631;
+	background: #2e4b61; */
+	background: var(--main-white-color);
+	transition: background 0.5s -0.1s;
+}
+
+.switcher-style-1 input:not(:checked):before {
+	color: #ccc;
+	color: var(--main-white-color);
+	transition: color 0.5s;
+}
+
+.switcher-style-1 input:not(:checked):after {
+	color: var(--main-gray-color);
+	transition: color 0.5s 0.2s;
+}
+
+.switcher-style-1 input:not(:checked)+label {
+	/* left: 125px; */
+	right: 130px;
+	left: 3px;
+	/* background: var(--main-blue-color); */
+	background: var(--main-green-color);
+	transition: right 0.4s 0.2s, left 0.5s, background 0.35s -0.1s;
+}

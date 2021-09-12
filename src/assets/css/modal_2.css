@@ -1,0 +1,138 @@
+.buy-new-team-member .alert {
+    background: transparent;
+    border-color: var(--main-red-color);
+    color: var(--main-red-color);
+    border-radius: 0;
+    font-size: 14px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+}
+.buy-new-team-member .note{
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.buy-new-team-member .note span{
+    color: var(--main-red-color);
+}
+
+.buy-new-team-member .form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.buy-new-team-member .form-group .btn {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    color: var(--main-white-color);
+    top: 0;
+    border-radius: 0;
+}
+
+.buy-new-team-member .form-group .btn.decrease {
+    background: var(--main-red-color);
+}
+
+.buy-new-team-member .form-group .btn span {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.buy-new-team-member .form-group .btn .plus:before {
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    content: '';
+    background: var(--main-white-color);
+    border-radius: 5px;
+}
+
+.buy-new-team-member .form-group .btn .plus:after {
+    width: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    content: '';
+    background: var(--main-white-color);
+    border-radius: 5px;
+}
+
+.buy-new-team-member .form-group .btn .minus:before {
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    content: '';
+    background: var(--main-white-color);
+    border-radius: 5px;
+}
+
+.buy-new-team-member .form-group .btn.increase {
+    right: 0;
+    background: var(--shadow-dark-green-color);
+}
+
+.buy-new-team-member .form-group .form-control {
+    border: none;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 300;
+    height: 100px;
+    line-height: 100px;
+    background: transparent;
+}
+.buy-new-team-member .total{
+    background: var(--main-blue-color);
+    color: var(--main-white-color);
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/*------------------------------*/
+/* .add-edit-milestones{
+
+} */
+.add-edit-milestones .modal-body{
+    padding-left: 0;
+    padding-right: 0;
+}
+/* .add-edit-milestones .modal-body .row{
+    max-width: calc(100% - 30px);
+    margin: 0;
+} */
+.add-edit-milestones .add-new-milestones{
+    background: var(--main-green-color);
+    color: var(--main-white-color);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+.add-edit-milestones .delete-milestone{
+    flex: 0 0 50px;
+    max-width: 50px;
+}
+.add-edit-milestones .delete-milestone a{
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 22px;
+    color: var(--main-red-color);
+}

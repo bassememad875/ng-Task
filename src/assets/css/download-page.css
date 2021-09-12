@@ -1,0 +1,82 @@
+.gray-panel {
+    background: var(--main-light-gray-color);
+}
+
+.download-option {
+    margin-bottom: 15px;
+}
+
+.download-option .plan-download {
+    padding: 30px;
+}
+
+.download-option .plan-download ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.download-option .plan-download ul li {
+    border-bottom: 1px solid var(--main-gray-border);
+    margin-bottom: 15px;
+}
+
+.download-option .plan-download ul li h3 {
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-option .plan-download ul li h3 a {
+    color: var(--main-gray-color);
+}
+
+.download-option .plan-download ul li p {
+    font-size: 14px;
+    color: var(--main-gray-color);
+    font-weight: 300;
+}
+
+.download-option .plan-download .btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-option .plan-download .btn-wrapper button {
+    color: var(--main-white-color);
+    font-size: 14px;
+    padding: 8px 20px;
+    background: #ccc;
+    font-weight: 300;
+}
+
+.download-option .plan-download .btn-wrapper button i {
+    margin-right: 5px;
+}
+
+.download-option .plan-download .btn-wrapper button.red {
+    background: var(--main-red-color);
+}
+
+.download-option .plan-download .btn-wrapper button.blue {
+    background: var(--main-blue-color);
+}
+
+@media (max-width: 475px) {
+    .download-option .plan-download .btn-wrapper {
+        display: block;
+    }
+
+    .download-option .plan-download .btn-wrapper button {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+    }
+}
+.small-required{
+    font-size: 12px;
+    color: var(--main-gray-color);
+}

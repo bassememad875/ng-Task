@@ -1,0 +1,55 @@
+.bzns-plan-setup h6 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bzns-plan-setup .checkboxs-wrapper .select {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--main-blue-color);
+    margin-right: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.bzns-plan-setup .checkboxs-wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bzns-plan-setup .checkboxs-wrapper ul li {
+    /* padding: 10px; */
+    /* background: #f7f7f7;
+    margin-bottom: 5px;
+    width: 49%;
+    display: inline-block; */
+}
+
+.bzns-modal .box-info {
+    background: var(--main-light-gray-color);
+    border: 1px solid var(--main-gray-border);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.bzns-modal .box-info h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bzns-modal .box-info p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--main-gray-color);
+    font-weight: 300;
+}
+/* add-organization-modal & add-program-modal */
+.add-organization-modal .modal-header h5 span,.add-program-modal .modal-header h5 span{
+    color: var(--main-white-color);
+    display: block;
+    font-size: 14px;
+}
+.add-organization-modal .modal-footer,.add-program-modal .modal-footer {
+    justify-content: center;
+}

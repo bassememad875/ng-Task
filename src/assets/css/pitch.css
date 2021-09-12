@@ -1,0 +1,337 @@
+.pitch-page .white-panel {
+    border-radius: 0;
+    padding: 50px 0;
+}
+
+.pitch-info-box {
+    padding: 0 20px;
+}
+
+.pitch-page section {
+    padding: 0 30px;
+}
+
+
+.pitch-page h1 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.pitch-page p {
+    font-size: 18px;
+    color: var(--main-gray-color);
+    font-weight: 300;
+    margin: 0;
+}
+
+.pitch-page h2 {
+    border-bottom: 1px solid var(--main-black-color);
+    margin-bottom: 20px;
+}
+
+.pitch-page h2 span {
+    font-weight: 300;
+    font-size: 30px;
+    border-bottom: 3px solid var(--main-black-color);
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.pitch-page h3 {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.pitch-page section .colord {
+    background: var(--blue);
+    margin: 0 20px;
+    padding: 20px 0;
+    color: var(--main-white-color);
+}
+
+.pitch-page section .colord .small-title {
+    color: var(--main-white-color);
+}
+
+.pitch-page section .colord .price {
+    font-size: 50px;
+    line-height: 35px;
+    font-weight: 300;
+    color: var(--main-white-color);
+}
+
+p.white-small {
+    font-size: 14px;
+    color: var(--main-white-color);
+    font-weight: 300;
+}
+
+/*---------------------------------------------------------------
+----------------------------------------------------------------*/
+.milestones-slider-wrapper {
+    margin: 40px 0 0;
+}
+
+.milestones-slider-wrapper .item:focus {
+    outline: none;
+}
+
+.milestones-slider-wrapper .item {
+    text-align: center;
+    /* flex: 0 0 20%;
+    max-width: 20%; */
+    position: relative;
+}
+
+.milestones-slider-wrapper .item::before {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    content: '';
+    height: 1px;
+    background: var(--main-gray-border);
+    z-index: 0;
+}
+
+.milestones-slider-wrapper .item .circle {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: var(--main-white-color);
+    padding: 1px;
+    border: 15px solid var(--main-blue-color);
+    position: relative;
+    z-index: 1;
+}
+
+
+.milestones-slider-wrapper .item .circle span {
+    display: block;
+}
+
+.milestones-slider-wrapper .item .circle span.month {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.milestones-slider-wrapper .item .circle span.day {
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 15px;
+}
+
+.milestones-slider-wrapper .item .circle span.year {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.milestones-slider-wrapper .item h4 {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 30px;
+    margin: 0;
+}
+
+/*@media (max-width: 767px){
+    .milestones li {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .milestones li h4{
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 768px){
+    .milestones li {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+@media (min-width: 992px){
+    .milestones li {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}*/
+/*--------------------------------------------------------------
+-------------------------------------------------------------*/
+.team-members-slider .item:focus {
+    outline: none;
+}
+
+.team-members-slider .item img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.team-members-slider .item h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.team-members-slider .item h5 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*------------------------------------------*/
+.edit-view {
+    position: relative;
+}
+
+.edit-view>div {
+    position: relative;
+    z-index: 1;
+}
+
+.edit-view::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    bottom: -15px;
+    right: 0;
+    z-index: 0;
+}
+
+.edit-view:hover::after {
+    border: 1px dashed var(--main-gray-border);
+}
+
+.edit-view a.edit-action {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    padding: 2px 10px;
+    background: var(--main-gray-color);
+    color: var(--main-white-color);
+    font-size: 12px;
+    text-decoration: none;
+    z-index: 10;
+    display: none;
+}
+
+.edit-view:hover a.edit-action {
+    display: inline-block;
+}
+
+.editing-area {
+    position: relative;
+}
+
+.editing-area:after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    bottom: -15px;
+    right: 0;
+    z-index: 0;
+    border: 1px dashed var(--main-green-color);
+}
+
+.editing-area>form {
+    position: relative;
+    z-index: 1;
+}
+
+.editing-area .form-group {
+    margin-bottom: 12px;
+}
+
+.editing-area .form-group .form-control {
+    font-weight: 300;
+    border: none;
+    color: var(--main-black-color);
+    background: transparent;
+    padding: 0;
+
+}
+
+.editing-area .form-group .form-control.big-text {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.editing-area .form-group .form-control.medium-text{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.editing-area .form-group .form-control.white-small{
+    color: var(--main-white-color);
+}
+
+.editing-area .form-group textarea.form-control {
+    color: var(--main-gray-color);
+    font-weight: 300;
+}
+
+.editing-area .form-group textarea.form-control.gray-small {
+    font-size: 14px;
+    color: var(--main-gray-color);
+    font-weight: 300;
+}
+
+.editing-area a.save-action {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    padding: 2px 10px;
+    background: var(--main-green-color);
+    color: var(--main-white-color);
+    font-size: 12px;
+    text-decoration: none;
+    z-index: 10;
+}
+
+/*--------------------------------*/
+.pitch-company-image {
+    margin: 0;
+    position: relative;
+}
+
+.pitch-company-image img {
+    /* background-color: var(--main-light-gray-color); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 79px;
+    width: 100%;
+}
+
+.pitch-company-image .pitch-company-up-btn {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: var(--main-blue-color) url('../img/pencil-edit-button.png') no-repeat center;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: 50%;
+}
+
+.pitch-company-image .pitch-company-up-btn input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    cursor: pointer;
+}

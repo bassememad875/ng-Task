@@ -1,0 +1,106 @@
+.partners-and-resources {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partners-and-resources .item {
+    flex: 0 0 20%;
+    max-width: 20%;
+    text-align: center;
+    padding: 15px;
+}
+
+.partners-and-resources .item img {
+    width: 130px;
+    margin: 0 0 15px;
+    border-radius: 50%;
+}
+
+.partners-and-resources .item h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.partners-and-resources .item a.add-partner {
+    text-decoration: none;
+    color: var(--main-black-color);
+}
+
+.partners-and-resources .item a.add-partner .icon {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    background: var(--main-gray-color);
+    border: 5px solid var(--gray);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.partners-and-resources .item a.add-partner .icon:before {
+    height: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    content: '';
+    background: var(--main-white-color);
+    border-radius: 5px;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.partners-and-resources .item a.add-partner .icon:after {
+    width: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    content: '';
+    background: var(--main-white-color);
+    border-radius: 5px;
+    height: 50px;
+    margin: auto;
+}
+
+@media (max-width: 992px) {
+    .partners-and-resources .item img {
+        width: 100px;
+    }
+    .partners-and-resources .item a.add-partner .icon{
+        width: 100px;
+        height: 100px;
+    }
+
+    .partners-and-resources .item h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .partners-and-resources .item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.bzns-upload-img .resources-up-btn {
+    color: var(--main-black-color);
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 10px 0 0;
+}
+.bzns-upload-img .resources-up-btn input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    cursor: pointer;
+}

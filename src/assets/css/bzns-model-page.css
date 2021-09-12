@@ -1,0 +1,109 @@
+.bzns-model-page .masonry-list-model {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.bzns-model-page .masonry-list-model li {
+    flex: 0 0 20%;
+    max-width: 20%;
+    height: 500px;
+    padding: 2.5px;
+    padding-bottom: 0;
+}
+
+.bzns-model-page .masonry-list-model li.bottom {
+    height: 200px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-top: 0;
+}
+
+.bzns-model-page .masonry-list-model li .item {
+    background: var(--main-gray-bg);
+    padding: 10px;
+    height: calc(100% - 5px);
+    margin-bottom: 5px;
+}
+
+.bzns-model-page .masonry-list-model li .item.half {
+    height: calc(50% - 5px);
+    margin-bottom: 5px;
+}
+
+.bzns-model-page .masonry-list-model li .item h5 {
+    font-weight: 500;
+    color: var(--main-black-color);
+    font-size: 16px;
+}
+
+.bzns-model-page .masonry-list-model li .item .btn {
+    border-radius: 50%;
+    font-size: 13px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    background: var(--main-blue-color);
+    color: var(--main-white-color);
+}
+
+.bzns-model-page .masonry-list-model li .item p {
+    font-size: 12px;
+}
+
+.bzns-model-page .masonry-list-model li .item .panel-contant-scroll {
+    max-height: calc(100% - 45px);
+    overflow: hidden;
+}
+
+
+@media (max-width:992px) {
+
+    .bzns-model-page .masonry-list-model li,
+    .bzns-model-page .masonry-list-model .bottom:nth-child(6) {
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+        height: 500px;
+        padding: 2.5px;
+    }
+
+    .bzns-model-page .masonry-list-model li.bottom:last-child {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+
+    .bzns-model-page .masonry-list-model li,
+    .bzns-model-page .masonry-list-model .bottom:nth-child(6) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: 500px;
+        padding: 2.5px;
+    }
+
+
+}
+
+@media (max-width:480px) {
+
+    .bzns-model-page .masonry-list-model li,
+    .bzns-model-page .masonry-list-model .bottom:nth-child(6) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 500px;
+        padding: 2.5px;
+    }
+
+    .bzns-model-page .masonry-list-model li.bottom:last-child {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 500px;
+    }
+}

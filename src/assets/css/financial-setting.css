@@ -1,0 +1,19 @@
+.financial-setting h4{
+    font-size: 18px;
+}
+.bznsbuilder-custom-switch{
+    height: 32px;
+}
+.bznsbuilder-custom-switch.custom-switch .custom-control-label::before{
+    width: 50px;
+    height: 24px;
+    border-radius: 30px;
+}
+.bznsbuilder-custom-switch.custom-switch .custom-control-label::after{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.bznsbuilder-custom-switch.custom-switch .custom-control-input:checked~.custom-control-label::after{
+    transform: translateX(26px);
+}

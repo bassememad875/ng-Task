@@ -1,0 +1,199 @@
+.bzns-custom-table .table thead th {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.bzns-custom-table .dataTables_wrapper .row:first-child {
+    margin-bottom: 15px;
+}
+
+.bzns-custom-table .dataTables_wrapper .row:last-child {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 14px;
+
+}
+
+.bzns-custom-table .dataTables_length {
+    font-size: 14px;
+}
+
+.bzns-custom-table .dataTables_filter {
+    font-size: 14px;
+}
+
+.bzns-custom-table .custom-select {
+    border-radius: 0;
+    margin: 0 10px;
+}
+
+.bzns-custom-table .form-control {
+    border-radius: 0;
+}
+
+.bzns-custom-table .dataTables_info {
+    font-size: 12px;
+    color: var(--main-gray-color)
+}
+
+.bzns-custom-table .table {
+    font-size: 13px;
+    color: var(--main-black-color);
+}
+
+.bzns-custom-table table.dataTable thead>tr>th {
+    font-weight: 500;
+}
+
+.bzns-custom-table table tr th:first-child {
+    font-weight: 400;
+}
+
+.bzns-custom-table table tr th:first-child:focus {
+    outline: none;
+}
+
+.bzns-custom-table table tbody td {
+    font-weight: 400;
+}
+
+.bzns-custom-table table tbody td a {
+    color: var(--main-blue-color);
+    text-decoration: none;
+}
+
+.bzns-custom-table table tbody td>span {
+    position: relative;
+    padding: 0 15px;
+}
+
+.bzns-custom-table table tbody td>span:before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #000;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bzns-custom-table table tbody td>span.active {
+    color: var(--shadow-dark-green-color);
+}
+
+.bzns-custom-table table tbody td>span.active:before {
+    background: var(--shadow-dark-green-color);
+}
+
+.bzns-custom-table table tbody td>span.notactive {
+    color: var(--main-red-color);
+}
+
+.bzns-custom-table table tbody td>span.notactive:before {
+    background: var(--main-red-color);
+}
+
+.bzns-custom-table .table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.bzns-custom-table .dtr-details {
+    padding: 0;
+    list-style: none;
+}
+
+.bzns-custom-table .pagination .previous,
+.bzns-custom-table .pagination .next {
+    width: 80px;
+    text-align: center;
+}
+
+.bzns-custom-table .pagination .previous .page-link,
+.bzns-custom-table .pagination .next .page-link {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.bzns-custom-table .child .dtr-details>li .dtr-title {
+    display: table-cell;
+    vertical-align: top;
+    font-weight: 500;
+    padding: 0.5rem 2rem 0.5rem 0;
+    border-bottom: 1px dashed #efefef;
+}
+
+.bzns-custom-table .child .dtr-details>li .dtr-data {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #efefef;
+}
+
+.bzns-custom-table table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child,
+.bzns-custom-table table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.bzns-custom-table .child .dtr-details>li {
+    display: table-row !important;
+    border: 0 !important;
+}
+
+.bzns-custom-table table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+    top: 50%;
+    left: 8px;
+    height: 18px;
+    width: 18px;
+    margin-top: -14px;
+    font-size: 18px;
+    color: var(--main-yellow-color);
+    background-color: transparent;
+    font-family: "Font Awesome 5 Free";
+    content: "\f055";
+    font-weight: 900;
+    position: absolute;
+}
+
+.bzns-custom-table table.dataTable.dtr-inline.collapsed>tbody>tr.parent[role="row"]>th:first-child:before {
+    content: '\f056';
+}
+
+.bzns-custom-table .child .dtr-details>li .dtr-title:after {
+    content: ':';
+}
+
+.bzns-custom-table .pagination .page-item {
+    margin-left: 0.4rem;
+}
+
+.bzns-custom-table .pagination .page-item .page-link {
+    border: 0;
+    color: var(--main-black-color);
+    border-radius: 3px;
+}
+
+.bzns-custom-table .pagination .page-item .page-link:hover {
+    border: 0;
+}
+
+.bzns-custom-table .pagination .page-item .page-link:focus {
+    box-shadow: none;
+}
+
+.bzns-custom-table .pagination .page-item.active .page-link {
+    background: var(--main-blue-color);
+    color: var(--main-white-color)
+}
+
+@media screen and (max-width: 767px) {
+    .bzns-custom-table .dataTables_length {
+        margin-bottom: 15px;
+    }
+    .bzns-custom-table .dataTables_paginate ul.pagination{
+        justify-content: center !important;
+        margin-top: 15px !important;
+    }
+}

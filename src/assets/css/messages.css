@@ -1,0 +1,324 @@
+.messages-page .white-panel {
+    border-radius: 0;
+}
+
+.messages-wrapper {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.messages-wrapper .users-panel {
+    flex: 0 0 235px;
+    max-width: 235px;
+    border-right: 1px solid var(--main-gray-border);
+}
+.messages-wrapper .users-panel .users-list{
+    max-height: 500px;
+}
+.messages-wrapper .users-panel .serach-input .form-group{
+    margin: 0;
+}
+.messages-wrapper .users-panel .serach-input .form-group .form-control{
+    outline: none;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid var(--main-gray-bg);
+    font-size: 12px;
+    line-height: 40px;
+}
+/* .messages-wrapper .users-panel .serach-input .form-group .form-control:focus{
+    outline: none;
+} */
+.messages-wrapper .users-panel ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.messages-wrapper .users-panel ul li {
+    display: flex;
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--main-gray-border);
+}
+
+.messages-wrapper .users-panel ul li:last-child {
+    border: none;
+}
+
+.messages-wrapper .users-panel ul li.active {
+    background: var(--main-gray-bg);
+}
+
+.messages-wrapper .users-panel ul li figure {
+    flex: 0 0 50px;
+    max-width: 50px;
+    /* width: 50px; */
+    height: 50px;
+    margin: 0;
+    position: relative;
+}
+
+.messages-wrapper .users-panel ul li figure a {
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.messages-wrapper .users-panel ul li figure .status {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid var(--main-white-color);
+    bottom: 6px;
+    right: -1px;
+}
+
+.messages-wrapper .users-panel ul li figure .status.online {
+    background: var(--main-green-color);
+}
+
+.messages-wrapper .users-panel ul li figure .status.offline {
+    background: var(--main-gray-color);
+}
+
+.messages-wrapper .users-panel ul li .user-info {
+    max-width: calc(100% - 50px);
+    padding: 5px 8px;
+}
+
+.messages-wrapper .users-panel ul li .user-info h4 {
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.messages-wrapper .users-panel ul li .user-info h4 a {
+    color: var(--main-black-color);
+    text-decoration: none;
+    display: block;
+}
+
+.messages-wrapper .users-panel ul li .user-info p {
+    color: var(--main-gray-color);
+    font-size: 12px;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.messages-wrapper .messages-panel {
+    width: 100%;
+}
+
+.messages-wrapper .messages-panel .messages-panel-header {
+    position: relative;
+}
+
+.messages-wrapper .messages-panel .messages-panel-header .active-user-chat {
+    display: flex;
+    padding: 10px;
+}
+
+.messages-wrapper .messages-panel .messages-panel-header .active-user-chat figure {
+    flex: 0 0 50px;
+    max-width: 50px;
+    height: 50px;
+    margin: 0;
+    position: relative;
+
+}
+
+.messages-wrapper .messages-panel .messages-panel-header .active-user-chat figure img {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.messages-wrapper .messages-panel .messages-panel-header .active-user-chat figure .status {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid var(--main-white-color);
+    bottom: 6px;
+    right: -1px;
+}
+
+.messages-wrapper .messages-panel .messages-panel-header .active-user-chat figure .status.online {
+    background: var(--main-green-color);
+}
+
+.messages-wrapper .messages-panel .messages-panel-header .active-user-chat figure .status.offline {
+    background: var(--main-gray-color);
+}
+
+.messages-wrapper .messages-panel .messages-panel-header .active-user-chat h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--main-black-color);
+}
+
+.messages-wrapper .messages-panel .messages-panel-header .active-user-chat .active-user-info {
+    padding: 5px 10px;
+}
+
+.messages-wrapper .messages-panel .messages-panel-header .active-user-chat h4 a {
+    color: var(--main-black-color);
+    text-decoration: none;
+}
+
+.messages-wrapper .messages-panel .messages-panel-header .show-users {
+    position: absolute;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--main-blue-color);
+    text-decoration: none;
+    display: none;
+}
+
+.messages-wrapper .messages-panel .messages-panel-body {
+    background: var(--main-gray-bg);
+    max-height: 400px;
+}
+
+.messages-wrapper .messages-panel .messages-panel-body ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.messages-wrapper .messages-panel .messages-panel-body ul li.msg-box-wrapper {
+    display: flex;
+    padding: 15px;
+}
+
+.messages-wrapper .messages-panel .messages-panel-body ul li.msg-box-wrapper figure {
+    flex: 0 0 35px;
+    max-width: 35px;
+    height: 35px;
+    margin: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.messages-wrapper .messages-panel .messages-panel-body ul li.msg-box-wrapper .msg-box {
+    padding: 0 10px;
+}
+
+.messages-wrapper .messages-panel .messages-panel-body ul li.msg-box-wrapper .msg-box .msg-text {
+    max-width: 500px;
+    background: var(--main-white-color);
+    box-shadow: 2.5px 3.33px 5px 0px rgb(0, 0, 0, 0.06);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.messages-wrapper .messages-panel .messages-panel-body ul li.msg-box-wrapper .msg-box .msg-text p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--main-gray-color);
+    margin: 0;
+}
+
+.messages-wrapper .messages-panel .messages-panel-body ul li.msg-box-wrapper .msg-box .msg-time {
+    font-size: 12px;
+    color: var(--main-gray-color);
+    padding: 0 10px;
+}
+
+.messages-wrapper .messages-panel .messages-panel-body ul li.msg-box-wrapper.you {
+    direction: rtl;
+    text-align: right;
+}
+
+.messages-wrapper .messages-panel .messages-panel-body ul li.msg-box-wrapper.you .msg-box {
+    direction: ltr;
+}
+
+.messages-wrapper .messages-panel .messages-panel-body ul li.msg-box-wrapper.you .msg-box .msg-text {
+    background: var(--main-blue-color);
+    text-align: left;
+}
+
+.messages-wrapper .messages-panel .messages-panel-body ul li.msg-box-wrapper.you .msg-box .msg-text p {
+    color: var(--main-white-color);
+}
+
+.messages-wrapper .messages-panel .messages-panel-footer {
+    padding: 15px 10px;
+}
+
+.messages-wrapper .messages-panel .messages-panel-footer .form-group {
+    margin: 0;
+    position: relative;
+}
+
+.messages-wrapper .messages-panel .messages-panel-footer .form-group .form-control {
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--main-gray-color);
+    /* height: 70px; */
+    padding-right: 60px;
+}
+
+.messages-wrapper .messages-panel .messages-panel-footer .form-group .form-control::-webkit-input-placeholder {
+    /* Edge */
+    font-style: italic;
+}
+
+.messages-wrapper .messages-panel .messages-panel-footer .form-group .form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-style: italic;
+}
+
+.messages-wrapper .messages-panel .messages-panel-footer .form-group .form-control::placeholder {
+    font-style: italic;
+}
+
+.messages-wrapper .messages-panel .messages-panel-footer .form-group button {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    color: var(--main-gray-color);
+    font-size: 20px;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .messages-wrapper .users-panel {
+        position: absolute !important;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: all ease 0.3s;
+
+    }
+    .messages-wrapper .users-panel.show{
+        transform: translateX(0%);
+    }
+
+    .messages-wrapper .messages-panel .messages-panel-header .show-users {
+        display: block;
+    }
+}

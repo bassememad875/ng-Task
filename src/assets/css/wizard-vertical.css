@@ -1,0 +1,61 @@
+/* .bzns-wizard-style.wizard.vertical > .content{
+    min-height: auto;
+} */
+/* .bzns-wizard-style.wizard.vertical > .content > .body {
+    position: absolute !important;
+} */
+.bzns-wizard-style.wizard.vertical > .content{
+    display: flex;
+}
+.bzns-wizard-style.wizard.vertical > .content .body:not(.current){
+    visibility: hidden;
+}
+.bzns-wizard-style.wizard.vertical>.steps>ul,
+.bzns-wizard-style.wizard.vertical>.actions>ul {
+    display: block;
+}
+.bzns-wizard-style.wizard.vertical>.steps>ul>li{
+    padding: 5px 0;
+}
+.bzns-wizard-style.wizard.vertical>.steps>ul>li a{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+}
+.bzns-wizard-style.wizard.vertical>.steps>ul>li a .num{
+    flex: 0 0 50px;
+    max-width: 50px;
+    height: 50px;
+    margin: 0 10px 0 0;
+}
+.bzns-wizard-style.wizard.vertical>.steps>ul>li a .num .icon{
+    display: none;
+}
+.bzns-wizard-style.wizard.vertical>.steps>ul>li a .small{
+    display: block;
+    color:var(--main-gray-color)
+}
+
+
+.bzns-wizard-style.wizard.vertical>.steps .done a .num span:not(.icon){
+    display: none;
+}
+.bzns-wizard-style.wizard.vertical>.steps .done a .num span.icon{
+    display: block;
+}
+.bzns-wizard-style.wizard.vertical>.actions{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+.bzns-wizard-style.wizard.vertical>.actions>ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.bzns-wizard-style.wizard.vertical > .actions > ul > li{
+    margin: 0;
+}
+/* , .bzns-wizard-style.wizard.vertical>.steps .done a:hover .num, .bzns-wizard-style.wizard.vertical>.steps .done a:active .num */

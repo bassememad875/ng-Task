@@ -1,0 +1,121 @@
+.inner-nav {
+    background: var(--main-white-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+.inner-nav .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.inner-nav .nav-item .nav-link {
+    font-size: 14px;
+    color: var(--main-gray-color);
+    position: relative;
+    padding: 15px;
+}
+
+.inner-nav .nav-item .nav-link:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--main-blue-color);
+    margin: 0 auto;
+}
+
+.inner-nav .nav-item.active .nav-link {
+    color: var(--main-blue-color);
+}
+
+.inner-nav .nav-item.active .nav-link:after {
+    width: 100%;
+}
+
+/* .inner-nav .form-control{
+    border-radius: 0;
+    border: 0px;
+} */
+/* .inner-nav .form-control:focus{
+    border-color: var(--main-blue-color);
+} */
+.inner-nav .form-group {
+    position: relative;
+}
+
+.inner-nav .form-group .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 22px;
+    line-height: 40px;
+    color: var(--main-blue-color);
+}
+
+.inner-nav .form-group .form-control {
+    width: 270px;
+    padding-right: 30px;
+}
+
+.funding-page .item-with-img {
+    border-top: 3px solid var(--main-blue-color);
+}
+
+.funding-page .item-with-img figure img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+    transition: all ease 0.3s;
+}
+
+.funding-page .item-with-img figure {
+    overflow: hidden;
+}
+
+.funding-page .item-with-img:hover figure img {
+    transform: scale(1.1);
+}
+
+.funding-page .item-with-img h4 {
+    font-size: 18px;
+}
+
+.funding-page .item-with-img p {
+    font-size: 14px;
+    color: var(--main-gray-color);
+    font-weight: 300;
+    min-height: 74px;
+    border-bottom: 1px solid var(--main-gray-border);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.funding-page .item-with-img .location {
+    font-size: 14px;
+    color: var(--main-gray-color);
+    font-weight: 300;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media(max-width:1200px) and (min-width:1024px) {
+    .inner-nav .form-group .form-control {
+        width: 190px;
+    }
+}
+
+@media(max-width:410px) {
+    .inner-nav .form-group .form-control {
+        width: 225px;
+    }
+}

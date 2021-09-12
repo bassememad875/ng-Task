@@ -1,0 +1,127 @@
+.credit-card-info {
+    background: url(../img/credit-card-bg.png) no-repeat center/cover;
+    width: 340px;
+    height: 200px;
+    position: relative;
+    /* margin: 0 auto; */
+}
+
+.credit-card-info .card-num {
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    color: var(--main-white-color);
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.credit-card-info .card-name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--main-white-color);
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.credit-card-info .delete-btn{
+    top: 40px;
+}
+@media (max-width: 375px){
+    .credit-card-info{
+        width: 300px;
+        height: 176px;
+    }
+    .credit-card-info .card-num{
+        bottom: 54px;
+        font-size: 17px;
+    }
+}
+
+/*----*/
+.checkcross{
+    position: relative;
+}
+label.toggle-item {
+    width: 7em;
+    background: #095386;
+    height: 3em;
+    display: inline-block;
+    border-radius: 50px;
+    /* margin: 40px; */
+    position: relative;
+    transition: all .3s ease;
+    transform-origin: 20% center;
+    cursor: pointer;
+}
+
+.checkcross label:before {
+    content: none;
+    position: absolute;
+}
+
+.checkcross input{
+    visibility: hidden;
+    position: absolute;
+}
+
+.checkcross .check {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    position: absolute;
+    background: #8BC34A;
+    transition: .4s ease;
+    top: 4.5px;
+    left: 4.5px;
+}
+
+.checkcross .check:before,
+.checkcross .check:after {
+    height: 4px;
+    border-radius: 10px;
+    background: #fff;
+    transition: .4s ease;
+    position: absolute;
+    content: '';
+}
+
+.checkcross .check:before {
+    width: 25px;
+    transform: rotate(-45deg) translate(-6px, 20px);
+    position: absolute;
+    content: '';
+}
+
+.checkcross .check:after {
+    width: 10px;
+    transform: rotate(45deg) translate(20px, 11px);
+    position: absolute;
+    content: '';
+}
+
+#checkcross:checked+label .check {
+    left: 68px;
+    transform: rotate(360deg);
+    background: #c34a4a;
+}
+
+#checkcross:checked+label .check:before {
+    width: 27px;
+    transform: rotate(-45deg) translate(-8px, 18px);
+    position: absolute;
+    content: '';
+}
+
+#checkcross:checked+label .check:after {
+    width: 27px;
+    transform: rotate(45deg) translate(18px, 8px);
+    position: absolute;
+    content: '';
+}
+
+/*-----*/

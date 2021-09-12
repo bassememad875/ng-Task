@@ -1,0 +1,316 @@
+
+/* Start Sidebar */
+
+
+/* Start Lift Sidebar */
+@media (min-width: 992px) {
+    .with-sidebar .page-content .lift-sidebar {
+        min-width: 220px;
+        width: 220px;
+    }
+}
+
+.lift-sidebar .user-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1em;
+    margin-top: -75px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.lift-sidebar .user-image:after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    right: -7px;
+    background: var(--main-white-color);
+    bottom: 50%;
+    border-radius: 82px 82px 0 0;
+    border: 1px solid var(--main-gray-border);
+    border-bottom: 0;
+}
+
+.lift-sidebar .user-image img {
+    z-index: 1;
+    position: relative;
+    border-radius: 50%;
+}
+
+.lift-sidebar .user-info h4 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.lift-sidebar .user-info h4 span {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+
+.lift-sidebar .bzns-btn {
+    font-size: 16px;
+}
+
+.company-phases {
+    padding: 0 15px;
+    list-style: none;
+    margin: 0 0 15px;
+    font-size: 0;
+}
+
+.company-phases li {
+    width: 33.333333%;
+    display: inline-block;
+    text-align: center;
+}
+
+.company-phases li a {
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    background: var(--main-white-color);
+    color: var(--main-blue-color);
+    border-radius: 50%;
+    line-height: 45px;
+    text-decoration: none;
+    border: 2px solid var(--main-blue-color);
+}
+
+.company-phases li.active a {
+    border-color: var(--main-blue-color);
+    background: var(--main-blue-color);
+    color: var(--main-white-color);
+}
+
+.company-phases li a h6 {
+    text-align: center;
+    color: var(--main-black-color);
+    margin: 0;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.soon a,
+.bzns-form-check.soon {
+    position: relative;
+}
+
+.soon span {
+    background: var(--main-red-color);
+    color: var(--main-white-color);
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.bzns-form-check.soon span:first-child {
+    top: -7px;
+    right: -9px;
+}
+
+a.panel-btn {
+    font-weight: 300;
+    color: var(--main-gray-color);
+    padding: 15px;
+    border-top: 1px solid var(--main-gray-border);
+    display: block;
+    background: var(--main-light-gray-color);
+    border-radius: 0 0 5px 5px;
+    font-size: 18px;
+}
+
+a.panel-btn:hover {
+    text-decoration: none;
+}
+
+/*.lift-sidebar .progress-circle {
+    margin: 20px auto;
+}*/
+svg.radial-progress {
+    height: auto;
+    max-width: 160px;
+    transform: rotate(-90deg);
+    width: 100%;
+    min-height: 180px;
+}
+
+svg.radial-progress circle {
+    fill: rgba(0, 0, 0, 0);
+    stroke: var(--main-white-color);
+    stroke-dashoffset: 219.91148575129;
+    /* Circumference */
+    stroke-width: 15px;
+}
+
+svg.radial-progress circle.incomplete {
+    opacity: 0.10;
+}
+
+svg.radial-progress circle.complete {
+    stroke-dasharray: 219.91148575129;
+    /* Circumference */
+}
+
+svg.radial-progress text {
+    fill: rgba(0, 0, 0, 1);
+    font-weight: 300;
+    text-anchor: middle;
+}
+
+svg.radial-progress text tspan {
+    font-size: 10px;
+    margin-top: 50px;
+}
+
+svg.radial-progress:nth-of-type(6n+1) circle {
+    stroke: var(--main-green-color);
+}
+
+svg.radial-progress:nth-of-type(6n+1) circle.incomplete {
+    stroke: var(--main-black-color);
+}
+
+.side-menu {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.side-menu li a {
+    font-size: 14px;
+    color: var(--main-black-color);
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid var(--main-gray-border);
+    text-decoration: none;
+    font-weight: 400;
+    transition: all ease 0.3s;
+}
+
+.side-menu li a:hover {
+    background: var(--main-blue-color);
+    color: var(--main-white-color);
+}
+
+.side-menu li a span {
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.side-menu li.active>a {
+    background: var(--main-blue-color);
+    color: var(--main-white-color);
+}
+/* End Lift Sidebar */
+
+/* Start Right Sidebar */
+@media (min-width: 992px) {
+    .with-sidebar .page-content .right-sidebar {
+        min-width: 300px;
+        width: 300px;
+    }
+}
+
+
+.with-padding-15 {
+    padding: 0 15px;
+}
+
+.list-with-img .item {
+    position: relative;
+    margin-bottom: 15px;
+    min-height: 53px;
+}
+
+.list-with-img .item .item-image {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.list-with-img .item .item-image a {
+    display: block;
+}
+
+.list-with-img .item .item-info {
+    padding-left: 60px;
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+}
+
+.list-with-img.list-with-btn .item .item-info {
+    width: calc(100% - 60px);
+}
+
+.list-with-img .item .item-info h4 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+/* .list-with-img .item a{
+    display: block;
+} */
+.list-with-img .item a:hover {
+    text-decoration: none;
+}
+
+.list-with-img .item .item-info h4 a,
+.list-with-img .item a .item-info h4 {
+    color: var(--main-black-color);
+    text-decoration: none;
+}
+
+.list-with-img .item .item-info p,
+.list-with-img .item .item-info h6 {
+    font-size: 14px;
+    margin: 0;
+    color: var(--main-gray-color);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 14px;
+}
+
+.list-with-img .item .item-info h6 {
+    color: #797979;
+}
+
+
+
+.list-with-img .item .item-action {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.list-with-img .item .item-action .bzns-btn {
+    font-size: 14px;
+    color: var(--main-white-color);
+    padding: 5px 5px;
+    width: 60px;
+}
+
+/* End Right Sidebar */
+
+/* End Sidebar */

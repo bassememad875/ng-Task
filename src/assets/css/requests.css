@@ -1,0 +1,72 @@
+.all-requests {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.all-requests li {
+    margin-bottom: 0;
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 1px solid var(--main-gray-border);
+}
+
+.all-requests li:last-child {
+    border: none;
+}
+
+.all-requests li figure {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.all-requests li .requests-info {
+    padding-left: 80px;
+    width: calc(100% - 140px);
+}
+
+.all-requests li .requests-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.all-requests li .requests-info h3 a{
+    color: var(--main-black-color);
+    text-decoration: none;
+}
+.all-requests li .requests-info h6 {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--main-gray-color);
+}
+
+.all-requests li .requests-info h5 {
+    font-size: 14px;
+}
+
+.all-requests li .requests-action {
+    position: absolute;
+    right: 0;
+    top: 24px;
+}
+
+.all-requests li .requests-action .btn {
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+@media (max-width: 768px) {
+    .all-requests li .requests-info{
+        width: 100%;
+    }
+    .all-requests li .requests-action{
+        position: static;
+        margin-top: 20px;
+    }
+}

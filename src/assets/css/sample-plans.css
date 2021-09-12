@@ -1,0 +1,210 @@
+.sample-plans-page .sample-plans-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sample-plans-page .sample-plans-list li {
+    border-bottom: 1px solid var(--main-light-gray-color);
+    padding: 15px 0;
+}
+
+.sample-plans-page .sample-plans-list li h4 {
+    margin-bottom: 0;
+}
+
+.sample-plans-page .sample-plans-list li h4 a {
+    font-size: 20px;
+    color: var(--main-blue-color);
+    text-decoration: none;
+}
+
+.sample-plans-page .sample-plans-list li h5 {
+    font-size: 14px;
+    color: var(--main-gray-color);
+    font-weight: 300;
+    margin: 0;
+}
+
+nav .pagination {
+    /* padding: 15px 35px;
+    background: var(--main-light-gray-color);
+    border-radius: 80px;
+    width: fit-content;
+    margin: 0 auto; */
+
+    padding: 15px 35px;
+    /* background: var(--main-light-gray-color); */
+    margin: 0 auto;
+    justify-content: center;
+}
+
+nav .pagination li {
+    margin: 0 10px;
+}
+
+nav .pagination li:first-child,
+nav .pagination li:last-child {
+    margin: 0;
+    flex: 0 0 40px;
+    max-width: 40px;
+}
+
+nav .pagination li:first-child a,
+nav .pagination li:last-child a {
+    border-radius: 50% !important;
+    background: var(--main-white-color);
+}
+
+nav .pagination li:first-child a:hover,
+nav .pagination li:last-child a:hover {
+    background: var(--main-white-color);
+}
+
+nav .pagination li a {
+    /* font-size: 14px;
+    border-radius: 50%;
+    border:none;
+    color: var(--main-blue-color);
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 19px;
+    background: transparent; */
+
+    font-size: 14px;
+    border-radius: 50%;
+    border: none;
+    color: var(--main-blue-color);
+    padding: 0;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 24px;
+    background: transparent;
+}
+
+nav .pagination li a:hover {
+    background: var(--main-light-gray-color);
+    color: var(--main-blue-color);
+}
+
+nav .pagination li a:focus {
+    box-shadow: none;
+}
+
+.sample-plans-page .search-options {
+    padding: 20px;
+    background: var(--main-light-gray-color);
+}
+
+.sample-plans-page .search-options .btn {
+    font-size: 14px;
+    padding: 5px 15px;
+    width: 47%;
+    margin-top: 13px;
+    margin-bottom: 0;
+}
+
+.sample-plans-page .search-options .btn:first-child {
+    margin-right: 6%;
+}
+
+/*---------Inner Page--------------*/
+/*.sample-plan-inner-page .sample-plan-content {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+ol.list-with-sub-list {
+    counter-reset: item;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+ol.list-with-sub-list li {
+    display: block;
+    position: relative;
+}
+
+ol.list-with-sub-list li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+    position: absolute;
+    left: -15px;
+    top: -2px;
+}
+
+ol.list-with-sub-list li .title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+ol.list-with-sub-list li p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--main-gray-color);
+}
+
+ol.list-with-sub-list li .subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}*/
+
+
+/* .sample-plan-inner-page .sample-plan-content li{} */
+.sample-plan-inner-page .sample-plan-content {
+    margin-bottom: 25px;
+}
+
+.sample-plan-content .chapter-content,
+.sample-plan-content .section-content {
+    margin-bottom: 15px;
+}
+
+.sample-plan-content .chapter-content .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.sample-plan-content .section-content .title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.sample-plan-content .chapter-content p,
+.sample-plan-content .section-content p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--main-gray-color);
+}
+
+/*---------------------------------*/
+
+.bzns-breadcrumb {
+    background: transparent;
+    padding: 15px 0;
+}
+
+.bzns-breadcrumb .breadcrumb-item {
+    font-size: 14px;
+    color: var(--main-black-color);
+    font-weight: 500;
+}
+
+.bzns-breadcrumb .breadcrumb-item a {
+    color: var(--main-blue-color);
+    text-decoration: none;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    content: '\f054';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--main-black-color);
+    font-size: 10px;
+} 

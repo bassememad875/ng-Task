@@ -1,0 +1,25 @@
+.fixed-footer{
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--main-black-color);    
+    padding: 15px 0;
+}
+.fixed-footer .fixed-footer--list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+.fixed-footer .fixed-footer--list li{
+    padding: 0 20px;
+}
+.fixed-footer .fixed-footer--list li a{
+    font-size: 15px;
+    color: var(--main-gray-color);
+    line-height: 33px;
+}
+.fixed-footer .fixed-footer--list li a:hover{
+    text-decoration: none;
+}

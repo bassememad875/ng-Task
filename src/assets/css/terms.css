@@ -1,0 +1,24 @@
+.terms-and-policies-modal .modal-body h2{
+    font-size: 18px;
+    margin-top: 30px;
+    color: var(--main-black-color);
+}
+.terms-and-policies-modal .modal-body h3{
+    font-size: 15px;
+    margin-top: 30px;
+    color: var(--main-black-color);
+}
+.terms-and-policies-modal .modal-body p{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--main-gray-color);
+    /* margin: 0; */
+}
+.terms-and-policies-modal .modal-body ul,.terms-and-policies-modal .modal-body ol{
+    /* margin: 0; */
+}
+.terms-and-policies-modal .modal-body ul li,.terms-and-policies-modal .modal-body ol li{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--main-gray-color);
+}

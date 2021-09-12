@@ -1,0 +1,111 @@
+:root {
+    --main-brand-yellow: #F4B400;
+    --main-brand-blue: #4285f4;
+    --main-brand-green: #0F9D58;
+}
+
+.program-price-modal .price-table .price-table-header {
+    display: inline-block;
+    margin-top: 30px;
+    position: relative;
+}
+
+.program-price-modal .price-table .price-table-header h2 {
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 70px;
+    margin: 0;
+}
+
+.program-price-modal .price-table .price-table-header span {
+    position: absolute;
+    bottom: -12px;
+    right: -5px;
+    font-weight: 600;
+}
+
+.program-price-modal .price-table .blue .price-table-header span {
+    bottom: -26px;
+}
+
+.program-price-modal .price-table .yellow h2 {
+    color: var(--main-brand-yellow);
+}
+
+.program-price-modal .price-table .blue h2 {
+    color: var(--main-brand-blue);
+}
+
+.program-price-modal .price-table .green h2 {
+    color: var(--main-brand-green);
+}
+
+.program-price-modal .price-table .price-table-img {
+    padding: 35px 35px 0;
+}
+
+.program-price-modal .price-table .price-table-img img {
+    max-width: 200px;
+}
+
+.program-price-modal .price-table .price-item-wrapper .price {
+    margin-bottom: 30px;
+}
+
+.program-price-modal .price-table .price-item-wrapper .price .period-part {
+    font-size: 16px;
+}
+
+.price-table-features ul {
+    padding: 0;
+    list-style: none;
+    margin: 0 0 40px;
+}
+
+.price-table-features ul li {
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.price-table-features ul li .icon {
+    color: var(--main-gray-color);
+    font-size: 12px;
+}
+.price-table-features ul li .icon:hover{
+    color: var(--main-black-color);
+}
+
+.tooltipster-white {
+    max-width: 200px;
+    background: var(--main-black-color);
+    z-index: 99999;
+    border-radius: 5px;
+    color: var(--main-white-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.10);
+}
+.tooltipster-arrow {
+    top: -1px;
+}
+
+.tooltipster-white .tooltipster-content {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 10px;
+}
+@media (max-width:1200px) and (min-width:992px){
+    .program-price-modal .price-table .price-table-header h2{
+        font-size: 50px;
+    }
+    .program-price-modal .price-table .price-table-header span{
+        bottom: -4px;
+        right: -15px;
+    }
+}
+@media (max-width:1200px){
+    .program-price-modal .price-table .price-table-img {
+        padding: 30px 15px 0;
+    }
+    .program-price-modal .price-table .price-table-img img {
+        max-width: 100%;
+    }
+}

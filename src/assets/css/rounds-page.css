@@ -1,0 +1,45 @@
+.rounds-page .cover-and-profile-v-2 .company-profile-images-wrapper {
+    align-items: initial;
+}
+
+.rounds-page .cover-and-profile-v-2 .company-profile-images-wrapper .company-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rounds-page .cover-and-profile-v-2 .company-profile-images-wrapper .company-cover .cover-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 220px;
+}
+
+.rounds-page .title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.new-applications .title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.new-applications .item{
+    border-bottom: 1px solid var(--main-gray-border);
+    margin-bottom: 15px;
+}
+.new-applications .item:last-child{
+    border: 0;
+}
+
+.new-applications .item .item-head h4 a{
+    font-size: 16px;
+    color: var(--main-blue-color);
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .rounds-page .cover-and-profile-v-2 .company-profile-images-wrapper .company-cover {
+        height: auto;
+    }
+}

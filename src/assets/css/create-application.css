@@ -1,0 +1,152 @@
+.application-sections{
+    display: flex;
+    flex-wrap: wrap;
+}
+.application-sections .application-sections-tabs{
+    flex: 0 0 200px;
+    max-width: 200px;
+    padding-right: 10px;
+}
+.application-sections .application-sections-tabs .nav .nav-link{
+    font-size: 14px;
+    color: var(--main-black-color);
+}
+.application-sections .application-sections-tabs .nav .nav-link.active{
+    background: var(--main-blue-color);
+    color: var(--main-white-color);
+}
+.application-sections .application-sections-content{
+    flex: 0 0 calc(100% - 200px);
+    max-width: calc(100% - 200px);
+}
+.choice_list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.choice_list li{
+    display: flex;
+    margin-bottom: 15px;
+}
+.choice_list li .form-group{
+    margin: 0;
+    flex-grow: 1;
+}
+.choice_list li .delete_choice{
+    flex: 0 0 45px;
+    max-width: 45px;
+    font-size: 22px;
+    color: var(--main-red-color);
+    text-align: center;
+    line-height: 40px;
+}
+.choice_list li .add_choice{
+    background: var(--main-green-color);
+    color: var(--main-white-color);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+}
+.question-with-edit-remove{
+    position: relative;
+    border:1px dashed transparent;
+    transition: ease all 0.3s;
+    padding: 5px;
+}
+.question-with-edit-remove:hover{
+    border-color:var(--main-gray-border);
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.15); */
+}
+.bzns-wizard-style.wizard .question-with-edit-remove .action{
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* opacity: 0; */
+    transition: all ease 0.3s;
+}
+.bzns-wizard-style.wizard .question-with-edit-remove:hover .action{
+    opacity: 1;
+}
+.question-with-edit-remove .action li{
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.question-with-edit-remove .action li a{
+    color: var(--main-gray-border);
+}
+.share-app li{
+    display: inline-block !important;
+}
+.share-app li a{
+    text-transform: uppercase;
+    display: block;
+    color: var(--main-white-color);
+    text-decoration: none;
+    padding-right: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.share-app li a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 15px;
+    background: rgba(0,0,0,0.1);
+    font-size: 16px;
+}
+.share-app li.facebook a{
+    background: #3E68BE;
+}
+.share-app li.twitter a{
+    background: #24ACFF;
+}
+.share-app li.linkedin a{
+    background: #0C78B9;
+}
+.input-with-icon{
+    position: relative;
+}
+.input-with-icon input{
+    padding-right: 45px !important;
+}
+.input-with-icon .icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--main-blue-color);
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+}
+@media (max-width:767px){
+    .application-sections .application-sections-tabs,.application-sections .application-sections-content{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .application-sections .application-sections-content{
+        margin-top: 30px;
+    }
+}
+@media (max-width:480px){
+
+    .share-app li{
+        display: block !important;
+        margin-bottom: 10px;
+    }
+}
