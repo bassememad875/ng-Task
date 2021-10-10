@@ -1,0 +1,25 @@
+<div class="white-panel blue-border">
+    <h4 class="panel-title mb-3 with-padding-15">{{panelTitle}}<span *ngIf="showNumber">{{number}}</span></h4>
+    <div class="list-with-img with-padding-15">
+      <div *ngFor="let item of items" class="item">
+        <figure  class="item-image">
+          <a href="#">
+            <img src={{item.img}}  alt="" class="img-fluid">
+          </a>
+        </figure>
+        <div class="item-info">
+          <h4><a href="#">{{item.name}}</a></h4>
+          <h6 *ngIf="isThreeLine">{{item.extraLine}}</h6>
+          <p>{{item.details}}</p>
+        </div>
+        <div *ngIf="hasAction" class="item-action">
+          <a href="#" class="btn bzns-btn green">{{item.actionName}}</a>
+        </div>
+      </div>
+      <!--Item-->
+
+    </div>
+    <!--List with img-->
+    <a href="#" class="panel-btn text-center"> {{name}}</a>
+  </div>
+  <!--White Panel-->

@@ -1,0 +1,126 @@
+<div class="page-option">
+    <div class="container">
+      <div class="options">
+        <div *ngIf="pageName==='Dashboard'" class="white-panel blue-border mb-0">
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <div class="">
+                <h1 class="page-title">{{pageName}}</h1>
+              </div>
+
+            </div>
+            <div class="col-lg-8 col-12">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4 text-center">
+                    <a href="Company_Profile.html" class="btn bzns-btn yellow">Company Profile</a>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <div class="select-finance">
+                      <mat-form-field appearance="fill">
+                        <mat-label>Select Finance</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let finance of finances" [value]="finance.name">
+                            {{finance.viewValue}}  <span> <i class="fas fa-pen edit"></i></span>
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="select-companys">
+                      <form action="">
+                        <div class="form-group select2-style-1">
+                          <label for="select_your_company">Company Name</label>
+                          <select id="select_your_company" class="select-2-init form-control"
+                            data-minimum-results-for-search="-1" data-dropdown-css-class="select2-dropdown-style-1"
+                            data-placeholder="Select Company">
+                            <option></option>
+                            <option value="Zoser" selected>Zoser</option>
+                            <option value="BznsCloud">BznsCloud</option>
+                            <option value="BznsBuilder">BznsBuilder</option>
+                            <option value="add_company" data-toggle="modal" data-target="#add_company_Modal">Add New
+                              Company</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="pageName==='Pitch'" class="white-panel blue-border mb-0">
+          <h1 class="page-title floting">Pitch</h1>
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <app-progress-bar [progressValue]="50"></app-progress-bar>
+            </div>
+            <div class="col-lg-8 col-12">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4 text-center">
+                    <a href="Company_Profile.html" class="btn bzns-btn yellow">Company Profile</a>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="select-export-type">
+                      <!-- <form action="">
+                        <div class="form-group select2-style-3">
+                          <select id="Export_As" class="select-2-init text-left form-control"
+                            data-minimum-results-for-search="-1" data-dropdown-css-class="select2-dropdown-style-3"
+                            data-placeholder="Export As">
+                            <option></option>
+                            <option value="PDF">PDF</option>
+                            <option value="Powerpoint">Powerpoint</option>
+                            <option value="Shareable Link">Shareable Link</option>
+                          </select>
+                        </div>
+                      </form> -->
+                      <form action="">
+                        <div class="dropdown custom-dropdown">
+                          <div class="btn dropdown-toggle" href="#" role="button" id="Export_As" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Export As
+                        </div>
+                          <div class="dropdown-menu" aria-labelledby="Export_As">
+                            <a class="dropdown-item pdf" href="#"><span><i class="far fa-file-pdf"></i></span> PDF</a>
+                            <a class="dropdown-item powerpoint" href="#"><span><i
+                                  class="far fa-file-powerpoint"></i></span> Powerpoint</a>
+                            <a class="dropdown-item shareable-link" href="#"><span><i class="fas fa-link"></i></span>
+                              Shareable Link</a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="select-companys">
+                      <form action="">
+                        <div class="form-group select2-style-1">
+                          <label for="select_your_company">Company Name</label>
+                          <select id="select_your_company" class="select-2-init form-control"
+                            data-minimum-results-for-search="-1" data-dropdown-css-class="select2-dropdown-style-1"
+                            data-placeholder="Select Company">
+                            <option></option>
+                            <option value="Zoser" selected>Zoser</option>
+                            <option value="BznsCloud">BznsCloud</option>
+                            <option value="BznsBuilder">BznsBuilder</option>
+                            <option value="add_company" data-toggle="modal" data-target="#add_company_Modal">Add New
+                              Company</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

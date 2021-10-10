@@ -24,6 +24,7 @@ header .top-header .right-menu>ul {
     padding: 0;
     margin: 0;
     height: 100%;
+    
 }
 
 header .top-header .right-menu>ul li {
@@ -33,18 +34,22 @@ header .top-header .right-menu>ul li {
     position: relative;
 }
 
-header .top-header .right-menu>ul>li>a {
+header .top-header .right-menu>ul>li>button {
     padding: 0px 10px;
     color: var(--main-white-color);
     position: relative;
     display: block;
+    background-color: transparent transparent var(--main-blue-color) transparent;;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
 }
 
-header .top-header .right-menu>ul li.messages>a {
+header .top-header .right-menu>ul li.messages>button {
     font-size: 30px;
 }
 
-header .top-header .right-menu>ul li.messages>a span {
+header .top-header .right-menu>ul li.messages>button span {
     position: absolute;
     right: -6px;
     top: -3px;
@@ -59,7 +64,6 @@ header .top-header .right-menu>ul li.messages>a span {
 }
 
 header .top-header .right-menu>ul li.messages .bzns-dropdown {
-    display: none;
     width: 280px;
     position: absolute;
     background: var(--main-white-color);
@@ -68,7 +72,7 @@ header .top-header .right-menu>ul li.messages .bzns-dropdown {
     z-index: 5;
     border-radius: 5px;
     animation: MoveUp 0.3s cubic-bezier(0.7, 0, 0.3, 1) both;
-    margin-top: 15px;
+    margin-top: 20px;
     transition: all ease 0.3s;
     /* overflow: hidden; */
 }
@@ -92,7 +96,7 @@ header .top-header .right-menu>ul li.messages .bzns-dropdown ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 header .top-header .right-menu>ul li.messages ul li {
@@ -146,11 +150,12 @@ header .top-header .right-menu>ul li.messages a.view-all {
 
 /*-------------*/
 
-header .top-header .right-menu>ul li.notifacation>a {
+header .top-header .right-menu>ul li.notifacation>button{
     font-size: 30px;
+
 }
 
-header .top-header .right-menu>ul li.notifacation>a span {
+header .top-header .right-menu>ul li.notifacation>button span {
     position: absolute;
     right: -3px;
     top: -3px;
@@ -165,7 +170,6 @@ header .top-header .right-menu>ul li.notifacation>a span {
 }
 
 header .top-header .right-menu>ul li.notifacation .bzns-dropdown {
-    display: none;
     width: 280px;
     position: absolute;
     background: var(--main-white-color);
@@ -174,7 +178,7 @@ header .top-header .right-menu>ul li.notifacation .bzns-dropdown {
     z-index: 5;
     border-radius: 5px;
     animation: MoveUp 0.3s cubic-bezier(0.7, 0, 0.3, 1) both;
-    margin-top: 15px;
+    margin-top: 20px;
     transition: all ease 0.3s;
     /* overflow: hidden; */
 }
@@ -226,14 +230,14 @@ header .top-header .right-menu>ul li.notifacation ul li a span {
     color: var(--main-blue-color);
 }
 
-header .top-header .right-menu>ul li.user-menu a img {
+header .top-header .right-menu>ul li.user-menu button img {
     width: 45px;
     height: 45px;
     border-radius: 50%;
+    
 }
 
 header .top-header .right-menu>ul li.user-menu .bzns-dropdown {
-    display: none;
     width: 200px;
     position: absolute;
     background: var(--main-white-color);
@@ -549,7 +553,7 @@ header .top-header .right-menu {
         padding: 0;
     }
 
-    header .top-header .right-menu>ul li.user-menu a img {
+    header .top-header .right-menu>ul li.user-menu button img {
         width: 35px;
         height: 35px;
     }
@@ -724,5 +728,99 @@ header .top-header .right-menu {
         display: none;
     }
 }
+.fas {
+    padding-top: 10px;
+}
 
 /* End Header */
+
+/* disable links  */
+a.noop {
+    pointer-events: none;
+ }
+
+/*************** SIMPLE INNER SCROLLBAR ***************/
+.custom-scroll {
+    max-height: 300px;
+}
+
+.custom-scroll>.scroll-element,
+.custom-scroll>.scroll-element div {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.custom-scroll>.scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.custom-scroll>.scroll-element.scroll-x {
+    bottom: 2px;
+    height: 8px;
+    left: 0;
+    width: 100%;
+}
+
+.custom-scroll>.scroll-element.scroll-y {
+    height: 100%;
+    right: 2px;
+    top: 0;
+    width: 8px;
+}
+
+.custom-scroll>.scroll-element .scroll-element_outer {
+    overflow: hidden;
+}
+
+
+.custom-scroll>.scroll-element .scroll-element_track,
+.custom-scroll>.scroll-element .scroll-bar {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+}
+
+.custom-scroll>.scroll-element .scroll-element_track {
+    background-color: #e0e0e0;
+}
+
+.custom-scroll>.scroll-element .scroll-bar {
+    background-color: #c2c2c2;
+}
+
+.custom-scroll>.scroll-element:hover .scroll-bar {
+    background-color: #919191;
+}
+
+.custom-scroll>.scroll-element.scroll-draggable .scroll-bar {
+    background-color: #919191;
+}
+
+
+/* update scrollbar offset if both scrolls are visible */
+
+.custom-scroll>.scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
+    left: -12px;
+}
+
+.custom-scroll>.scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
+    top: -12px;
+}
+
+
+.custom-scroll>.scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+    left: -12px;
+}
+
+.custom-scroll>.scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+    top: -12px;
+}
+
+/*---------------End SCROLLBAR ------------------*/
